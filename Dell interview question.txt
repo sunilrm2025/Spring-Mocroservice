@@ -1,0 +1,31 @@
+1. Interface will be final interface explain how it will work with real time scenario.
+2. Explain markable interface.
+3. explain the term final keyword.
+4. Explain the solid priciple in java.
+5. Diff b/w check and uncheck exception.
+6. Define the keyword @functional interface.
+7. Define comparable interface.
+8. What happends when uncaught exception occurs in microservices how you can overcome from that?
+9. Explain the practicle implemention of spring boot with rabit queue and how we can send the message information if the allocated queue got filled.
+10.Program using Streams and Concurrent hashmap .
+11.what single class and single method in interface ?
+12.Whats bootstrap class loader .Explain with real time scenario ?
+13.is functional interface would be final interface?
+14.Why function interface have only one abstract method?
+15.How we can costommized the exception in microservices give some practical example.
+16.Different b/w wait and sleep method.
+17.DIffernt b/w gouping by the partionan by method.
+18.Diffenrent b/w hashmap and concurrent hashmap.
+============================================================================================================================
+
+1.
+Ans-Why was the language designed this way?
+If an interface was declared final I suppose it could have meant that
+
+No other interface could extend it
+
+This would be a non-sensical restriction. The reasons for why it can be useful to declare a class final, is to protect state invariants, prohibit overriding of all methods at once, etc. None of these restrictions makes sense for interfaces. (There is no state, and all methods must be overridden.)
+
+No class could implement the interface
+
+This obviously defeats the purpose of an interface altogether.
